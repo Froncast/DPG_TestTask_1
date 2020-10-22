@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="src/css/normalize.css">
+	<link rel="stylesheet" href="src/css/main.css">
+	<script src="src/js/main.js" defer></script>
+	<title>DPG_TestTask</title>
+</head>
+
+<body>
+	<h1 class="title">Hello</h1>
+	<form class="form">
+		<h2 class="form__title">For business enquiries please use the form below</h2>
+		<span class="form__notice">*Required</span>
+		<div class="form-control">
+			<label for="name" class="form__input-label" autocomplete="off">Name*</label>
+			<input type="text" id="name" name="name" class="form__input" autocomplete="off">
+		</div>
+		<div class="form-control">
+			<label for="company" class="form__input-label">Company*</label>
+			<input type="text" id="company" name="company" class="form__input" autocomplete="off">
+		</div>
+		<div class="form-control">
+			<label for="email" class="form__input-label">E-mail*</label>
+			<input type="text" id="email" name="email" class="form__input" autocomplete="off">
+		</div>
+		<div class="form-control">
+			<label for="phone" class="form__input-label">Phone</label>
+			<input type="text" id="phone" name="phone" class="form__input" autocomplete="off">
+		</div>
+		<div class="form-control">
+			<label for="subject" class="form__input-label">Subject</label>
+			<input type="text" id="subject" name="subject" class="form__input" autocomplete="off">
+		</div>
+		<div class="form-control">
+			<label for="message" class="form__input-label">Message*</label>
+			<textarea id="message" name="message" class="form__textarea" autocomplete="off"></textarea>
+		</div>
+		<div class="form-control">
+			<input id="privacy" type="checkbox" name="privacy" class="form__input-check">
+			<label for="privacy" class="form__input-check-label">I accept&nbsp;<a href="#"
+					class="form__input-privacy-link">Terms and Privacy
+					Policy</a></label>
+		</div>
+		<button class="form__btn">Send</button>
+	</form>
+</body>
+
+</html>

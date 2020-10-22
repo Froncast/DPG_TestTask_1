@@ -1,0 +1,125 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	outline: none
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap')
+
+body
+	background: url('../img/main-bg.jpg') #331c2c
+	background-size: cover
+	color: #ffffff
+	font-family: 'Roboto', sans-serif
+	padding-top: 90px
+	padding-bottom: 83px
+
+.title
+	margin: 0
+	margin-bottom: 25px
+	text-align: center
+	font-weight: 500
+	font-size: 55px
+	line-height: 120%
+	text-shadow: 0px 4px 19px rgba(0, 0, 0, 0.97)
+
+.form
+	max-width: 389px
+	margin: auto
+	padding: 41px 45px
+	background: #171929
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7)
+	border-radius: 27px
+	&__title
+		margin-bottom: 11px
+		font-style: normal
+		font-weight: normal
+		font-size: 18px
+		line-height: 120%
+		text-align: center
+	&__notice
+		display: block
+		margin-bottom: 10px
+		text-align: center
+		font-weight: 300
+		font-size: 15px
+		line-height: 120%
+		color: #797EA3
+	&-control
+		display: flex
+		flex-direction: column
+		margin-bottom: 38px
+	&__input-label
+		margin-bottom: 7px
+		font-style: normal
+		font-weight: 300
+		font-size: 15px
+		line-height: 120%
+		color: #797EA3
+	&__input,
+	&__textarea
+		background: transparent
+		border: none
+		border-bottom: 1px solid #3F4363
+		padding: 7px 0
+		resize: none
+		font-style: normal
+		font-weight: normal
+		font-size: 18px
+		line-height: 120%
+		color: #ffffff
+		overflow: hidden
+		&:focus
+			border-bottom: 1px solid #ffffff
+	&__input
+		&-check
+			position: absolute
+			z-index: -1
+			opacity: 0
+			&-label
+				display: inline-flex
+				align-items: center
+				user-select: none
+				&:before
+					content: ''
+					display: inline-block
+					width: 31px
+					height: 31px
+					flex-shrink: 0
+					flex-grow: 0
+					border-radius: 8px
+					margin-right: 12px
+					background: #2C2F47
+			&:checked + &-label::before
+				background: url('../img/check.svg') no-repeat center center #2C2F47
+		&-privacy-link
+			color: #B9BEE6
+	&__btn
+		display: block
+		margin: auto
+		padding: 11px 40px
+		background: #2C2F47
+		border-radius: 28px
+		text-align: center
+		border: none
+		color: #ffffff
+		cursor: pointer
+.not-valid
+	border-color: red
+	&-checkbox
+		&:before
+			box-shadow: 0px 0px 40px rgba(255, 0, 0, 0.4)
+
+@media (max-width: 480px)
+	body
+		padding-left: 30px
+		padding-right: 30px
+	.form
+		&__input
+			&-check
+				&-label
+					flex-direction: column
+					&::before
+						margin-bottom: 10px
+			&-privacy-link
+				text-align: center
